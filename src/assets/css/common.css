@@ -1,0 +1,67 @@
+@charset "utf-8";
+*{
+    margin:0; padding:0;
+    }
+html{height:100%;}
+body {min-height:100%;padding-bottom:230px !important;position:relative;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0;  font-family: "微软雅黑"; }
+fieldset, img { border: 0; }
+ul, ol, li { list-style: none; font-family:'Microsoft YaHei'; }
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style: normal; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+abbr, acronym { border: 0; font-variant: normal; }
+input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; background-color: #fff; border: none;}
+code, kbd, samp, tt { font-size: 100%; }
+a{text-decoration:none;}
+a:link,a:visited {color:#0054a7;}
+a:hover,a:active{
+    text-decoration: none !important;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea{ *font-size: 100%;}
+ol, ul { list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table,tr,td { border-collapse: collapse; border-spacing: 0; margin:0;padding:0;}
+caption, th { text-align: left; }
+sup, sub { font-size: 100%; vertical-align: baseline; }
+
+/* remember to highlight anchors and inserts somehow! */
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/**Common Css**/
+.fr { float: right; *display: inline;}
+.fl { float: left; *display: inline;}
+.mart10 {margin-top:10px;}
+/*文本超出显示省略号*/
+.ehn { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+/*清除浮动*/
+.clearfix { clear: both; *zoom:1;}
+.clearfix:after { display: block; clear: both; content: "\0020"; visibility: hidden; height: 0; }
+/* 管理后台容器 */
+.backcontent {width:calc(100% - 183px);margin:0 auto;padding:0 5px;}
+.breadst {height:40px;line-height:40px;font-size:12px;font-family:'宋体';background-color:#edf6fa;border-bottom:1px solid #ddd;}
+.el-breadcrumb__inner a, .el-breadcrumb__inner.is-link {font-weight:normal;}
+/* 默认按钮配色 */
+.el-button {padding:8px 10px;font-size:12px;border:2px solid}
+.el-button--primary {background-color:#0054a7;border-color:#0054a7;}
+.el-button--primary:hover {background-color:#ff6600;border-color:#ff6600;}
+.el-button--warning {background-color:#ff6600;border-color:#ff6600;}
+/* 重写输入框高度 */
+.el-input__inner {height:28px;line-height:28px;}
+.el-form-item__label ,.el-input,.el-select-dropdown__item,.el-form-item__content,.el-date-editor .el-range__icon,.el-date-editor .el-range-input, .el-date-editor .el-range-separator{font-size:12px;}
+.el-date-editor .el-range-separator,.el-date-editor .el-range__icon {line-height:20px;}
+/* table重写 */
+.el-table {font-size:12px;}
+.el-table thead {color:#fff}
+.el-table th {background-color:#ff6600;}
+.el-table th,.el-table td {text-align:center;}
+.el-table th {padding:8px 0;}
+.el-table td {padding:4px 0;}
+.el-table td, .el-table th.is-leaf {border-bottom:1px dashed #ddd}
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {border-right:1px dashed #ddd}
